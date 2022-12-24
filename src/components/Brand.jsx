@@ -31,28 +31,19 @@ export default function SimpleSlider() {
     <ul>
       <Slider {...settings}>
         <li className="item">
-          <img src="assets/img/partners/1.png" alt="partners brand" />
+          <h2>VS Code</h2>
         </li>
         <li className="item">
-          <img src="assets/img/partners/2.png" alt="partners brand" />
+          <h2>Postman</h2>
         </li>
         <li className="item">
-          <img src="assets/img/partners/3.png" alt="partners brand" />
+          <h2>Adobe Suite</h2>
         </li>
         <li className="item">
-          <img src="assets/img/partners/4.png" alt="partners brand" />
+          <h2>Git</h2>
         </li>
         <li className="item">
-          <img src="assets/img/partners/5.png" alt="partners brand" />
-        </li>
-        <li className="item">
-          <img src="assets/img/partners/6.png" alt="partners brand" />
-        </li>
-        <li className="item">
-          <img src="assets/img/partners/7.png" alt="partners brand" />
-        </li>
-        <li className="item">
-          <img src="assets/img/partners/8.png" alt="partners brand" />
+          <h2>Firebase</h2>
         </li>
       </Slider>
     </ul>

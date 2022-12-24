@@ -31,7 +31,6 @@ const Portfolio = () => {
             <div className="title_flex">
               <div className="left">
                 <span>Portfolio</span>
-                <h3>Creative Portfolio</h3>
               </div>
             </div>
           </div>
@@ -41,41 +40,15 @@ const Portfolio = () => {
             <Tabs>
               <TabList>
                 <Tab>All</Tab>
-                <Tab>Vimeo</Tab>
-                <Tab>Youtube</Tab>
-                <Tab>Photography</Tab>
-                <Tab>Details</Tab>
+                <Tab>React</Tab>
+                <Tab>Landing Pages</Tab>
+                <Tab>Web Apps</Tab>
+                <Tab>HTML Emails</Tab>
               </TabList>
               {/* END TABLIST */}
               <div className="list_wrapper">
                 <TabPanel>
                   <ul className="portfolio_list">
-                    <li data-aos="fade-right" data-aos-duration="1200">
-                      <div className="inner">
-                        <div className="entry tokyo_tm_portfolio_animation_wrap">
-                          <img
-                            src="assets/img/portfolio/5.jpg"
-                            alt="Vimeo"
-                            data-tip
-                            data-for="vimeo"
-                            onClick={() => setOpen2(true)}
-                          />
-                          <ReactTooltip
-                            id="vimeo"
-                            place="bottom"
-                            type="light"
-                            effect="float"
-                            className="tooltip-wrapper"
-                          >
-                            <div>
-                              <h5>Teresa Butler</h5>
-                              <span>Vimeo</span>
-                            </div>
-                          </ReactTooltip>
-                        </div>
-                      </div>
-                    </li>
-                    {/* END VIMEO */}
                     <li
                       data-aos="fade-right"
                       data-aos-duration="1200"
@@ -84,101 +57,7 @@ const Portfolio = () => {
                       <div className="inner">
                         <div className="entry tokyo_tm_portfolio_animation_wrap">
                           <img
-                            src="assets/img/portfolio/2.jpg"
-                            alt="Youtube"
-                            data-tip
-                            data-for="youtube"
-                            onClick={() => setOpen(true)}
-                          />
-                          <ReactTooltip
-                            id="youtube"
-                            place="bottom"
-                            type="light"
-                            effect="float"
-                            className="tooltip-wrapper"
-                          >
-                            <div>
-                              <h5>Ashely Flores</h5>
-                              <span>Youtube</span>
-                            </div>
-                          </ReactTooltip>
-                        </div>
-                      </div>
-                    </li>
-                    {/* END YOUTUBE */}
-                    <SRLWrapper>
-                      <li
-                        data-aos="fade-right"
-                        data-aos-duration="1200"
-                        data-aos-delay="200"
-                      >
-                        <div className="inner">
-                          <div className="entry tokyo_tm_portfolio_animation_wrap">
-                            <a href="assets/img/portfolio/4.jpg">
-                              <img
-                                src="assets/img/portfolio/4.jpg"
-                                alt="Childhood"
-                                data-tip
-                                data-for="shot"
-                              />
-                              <ReactTooltip
-                                id="shot"
-                                place="bottom"
-                                type="light"
-                                effect="float"
-                                className="tooltip-wrapper"
-                              >
-                                <div>
-                                  <h5>Derek Smith</h5>
-                                  <span>Shot</span>
-                                </div>
-                              </ReactTooltip>
-                            </a>
-                          </div>
-                        </div>
-                      </li>
-                      {/* END SHOT */}
-                      <li
-                        data-aos="fade-right"
-                        data-aos-duration="1200"
-                        data-aos-delay="300"
-                      >
-                        <div className="inner">
-                          <div className="entry tokyo_tm_portfolio_animation_wrap">
-                            <a href="assets/img/portfolio/3.jpg">
-                              <img
-                                src="assets/img/portfolio/3.jpg"
-                                alt="Besh Award"
-                                data-tip
-                                data-for="shot2"
-                              />
-                            </a>
-                            <ReactTooltip
-                              id="shot2"
-                              place="bottom"
-                              type="light"
-                              effect="float"
-                              className="tooltip-wrapper"
-                            >
-                              <div>
-                                <h5>Gloria jenkins</h5>
-                                <span>Shot</span>
-                              </div>
-                            </ReactTooltip>
-                          </div>
-                        </div>
-                      </li>
-                      {/* END SHOT */}
-                    </SRLWrapper>
-                    <li
-                      data-aos="fade-right"
-                      data-aos-duration="1200"
-                      data-aos-delay="100"
-                    >
-                      <div className="inner">
-                        <div className="entry tokyo_tm_portfolio_animation_wrap">
-                          <img
-                            src="assets/img/portfolio/6.jpg"
+                            src="assets/img/portfolio/spotify-searcher.png"
                             alt="Details"
                             data-tip
                             data-for="detail"
@@ -193,7 +72,131 @@ const Portfolio = () => {
                             className="tooltip-wrapper"
                           >
                             <div>
-                              <h5>Selena Gomez</h5>
+                              <h5>Spotify Searcher</h5>
+                              <span>React</span>
+                            </div>
+                          </ReactTooltip>
+                        </div>
+                      </div>
+                    </li>
+                    {/* END DETAILS */}
+                    <li
+                      data-aos="fade-right"
+                      data-aos-duration="1200"
+                      data-aos-delay="200"
+                    >
+                      <div className="inner">
+                        <div className="entry tokyo_tm_portfolio_animation_wrap">
+                          <img
+                            src="assets/img/portfolio/7.jpg"
+                            alt="Details"
+                            data-tip
+                            data-for="detail2"
+                            onClick={toggleModalFour}
+                          />
+
+                          <ReactTooltip
+                            id="detail2"
+                            place="bottom"
+                            type="light"
+                            effect="float"
+                            className="tooltip-wrapper"
+                          >
+                            <div>
+                              <h5>Ave Simone</h5>
+                              <span>Details</span>
+                            </div>
+                          </ReactTooltip>
+                        </div>
+                      </div>
+                    </li>
+                    {/* END DETAILS */}
+                    <li
+                      data-aos="fade-right"
+                      data-aos-duration="1200"
+                      data-aos-delay="200"
+                    >
+                      <div className="inner">
+                        <div className="entry tokyo_tm_portfolio_animation_wrap">
+                          <img
+                            src="assets/img/portfolio/7.jpg"
+                            alt="Details"
+                            data-tip
+                            data-for="detail2"
+                            onClick={toggleModalFour}
+                          />
+
+                          <ReactTooltip
+                            id="detail2"
+                            place="bottom"
+                            type="light"
+                            effect="float"
+                            className="tooltip-wrapper"
+                          >
+                            <div>
+                              <h5>Ave Simone</h5>
+                              <span>Details</span>
+                            </div>
+                          </ReactTooltip>
+                        </div>
+                      </div>
+                    </li>
+                    {/* END DETAILS */}
+                    <li
+                      data-aos="fade-right"
+                      data-aos-duration="1200"
+                      data-aos-delay="200"
+                    >
+                      <div className="inner">
+                        <div className="entry tokyo_tm_portfolio_animation_wrap">
+                          <img
+                            src="assets/img/portfolio/7.jpg"
+                            alt="Details"
+                            data-tip
+                            data-for="detail2"
+                            onClick={toggleModalFour}
+                          />
+
+                          <ReactTooltip
+                            id="detail2"
+                            place="bottom"
+                            type="light"
+                            effect="float"
+                            className="tooltip-wrapper"
+                          >
+                            <div>
+                              <h5>Ave Simone</h5>
+                              <span>Details</span>
+                            </div>
+                          </ReactTooltip>
+                        </div>
+                      </div>
+                    </li>
+                    {/* END DETAILS */}
+                    <li
+                      data-aos="fade-right"
+                      data-aos-duration="1200"
+                      data-aos-delay="200"
+                    >
+                      <div className="inner">
+                        <div className="entry tokyo_tm_portfolio_animation_wrap">
+                          <img
+                            src="assets/img/portfolio/7.jpg"
+                            alt="Details"
+                            data-tip
+                            data-for="detail2"
+                            onClick={toggleModalFour}
+                          />
+
+                          <ReactTooltip
+                            id="detail2"
+                            place="bottom"
+                            type="light"
+                            effect="float"
+                            className="tooltip-wrapper"
+                          >
+                            <div>
+                              <h5>Ave Simone</h5>
                               <span>Details</span>
                             </div>
                           </ReactTooltip>
@@ -441,22 +444,6 @@ const Portfolio = () => {
         </div>
       </SimpleReactLightbox>
 
-      {/* all modal video and popup goes here */}
-      <ModalVideo
-        channel="youtube"
-        autoplay
-        isOpen={isOpen}
-        videoId="1gyTUHP6ne8"
-        onClose={() => setOpen(false)}
-      />
-      <ModalVideo
-        channel="vimeo"
-        autoplay
-        isOpen={isOpen2}
-        videoId="100171151"
-        onClose={() => setOpen2(false)}
-      />
-
       {/* START MODAL FOR PORTFOLIO DETAILS */}
       <Modal
         isOpen={isOpen3}
@@ -474,17 +461,18 @@ const Portfolio = () => {
           <div className="box_inner">
             <div className="description_wrap scrollable">
               <div className="image">
-                <img src="assets/img/thumbs/4-3.jpg" alt="tumb" />
+                <img src="assets/img/thumbs/spotify-searcher.png" alt="tumb" />
                 <div
                   className="main"
                   style={{
-                    backgroundImage: "url(assets/img/portfolio/6.jpg)",
+                    backgroundImage:
+                      "url(assets/img/portfolio/spotify-searcher.png)",
                   }}
                 ></div>
               </div>
               {/* END IMAGE */}
               <div className="portfolio_main_title">
-                <h3>Selena Gomez</h3>
+                <h3>Spotify Searcher</h3>
                 <span>Details</span>
               </div>
               {/* END portfolio_main_title */}

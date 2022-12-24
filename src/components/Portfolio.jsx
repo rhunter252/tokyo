@@ -40,15 +40,10 @@ const Portfolio = () => {
             <Tabs>
               <TabList>
                 <Tab>All</Tab>
-                {/* All */}
-                <Tab>Vimeo</Tab>
-                {/* For Vimeo */}
-                <Tab>Youtube</Tab>
-                {/* For Youtube */}
+                <Tab>React</Tab>
+                <Tab>Landing Page</Tab>
                 <Tab>Photography</Tab>
-                {/* For Images */}
                 <Tab>Details</Tab>
-                {/* For Popup Details */}
               </TabList>
               {/* END TABLIST */}
 
@@ -65,7 +60,7 @@ const Portfolio = () => {
                           />
                         </div>
                         <div className="mobile_title">
-                          <h3>Teresa Butler</h3>
+                          <h3>Randy Hunter</h3>
                           <span>Vimeo</span>
                         </div>
                       </div>

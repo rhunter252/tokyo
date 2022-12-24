@@ -121,7 +121,7 @@ body.dark .tokyo_tm_all_wrap .leftpart img {
   filter: invert(1);
 }
 body.dark .tokyo_tm_home .avatar .image {
-  background-image: url(../../1.jpg) !important;
+  background-image: "url(./assets/img/slider/keyboard.jpg)" !important;
 }
 body.dark {
   @media (max-width: 1200px) {
@@ -137,8 +137,10 @@ body.dark .cursor-inner {
   height: 6px;
   z-index: 50;
   background-color: #fff;
-  -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 body.dark .cursor-inner.cursor-hover {
   margin-left: -40px;

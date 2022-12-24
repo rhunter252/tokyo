@@ -22,9 +22,12 @@ const About = () => {
           <div className="description_inner">
             <div className="left">
               <p>
-                Hello, I am a creative photographer based in New York and happy
-                to travel all over Europe to capture your big day in candid and
-                authentic photos. I will create a lasting memory of the people.
+                I started playing with computers when I was 11 years-old. Since
+                then, I've been tinkering with all sorts of technologies that in
+                some way or another led me to work on video production, creating
+                websites, and web applications. I'm a lifelong learner 🎓, a
+                father👶🏽🧒🏽, a husband💍, and I might have a thing for video
+                games. 🎮
               </p>
               <div className="tokyo_tm_button">
                 <button onClick={toggleModal} className="ib-button">
@@ -51,8 +54,12 @@ const About = () => {
                 <li>
                   <p>
                     <span>Study:</span>N.C. Agricultural & Technical State
-                    Univeresity
+                    University
                   </p>
+                </li>
+                <li>
+                  <span>Major:</span>
+                  Computer Science
                 </li>
               </ul>
               {/* END UL */}
@@ -95,36 +102,18 @@ const About = () => {
                       <span>
                         <span className="label">Javascript</span>
                       </span>
-                      <div className="background"></div>
                     </div>
 
-                    <div className="progress_inner" data-value="80">
+                    <div>
                       <span>
                         <span className="label">HTML</span>
                       </span>
-                      <div className="background">
-                        <div className="bar">
-                          <div
-                            className="bar_in"
-                            style={{ width: 80 + "%" }}
-                          ></div>
-                        </div>
-                      </div>
                     </div>
 
-                    <div className="progress_inner" data-value="90">
+                    <div>
                       <span>
-                        <span className="label">Family Photography</span>
-                        <span className="number">90%</span>
+                        <span className="label">CSS</span>
                       </span>
-                      <div className="background">
-                        <div className="bar">
-                          <div
-                            className="bar_in"
-                            style={{ width: 90 + "%" }}
-                          ></div>
-                        </div>
-                      </div>
                     </div>
                   </div>
                   {/* END PROGRESS */}
@@ -133,53 +122,47 @@ const About = () => {
 
                 <div className="right">
                   <div className="about_title">
-                    <h3>Frameworks</h3>
+                    <h3>Frameworks & Libraries</h3>
                   </div>
                   {/* END TITLE */}
                   <div className="tokyo_progress">
-                    <div className="progress_inner" data-value="95">
+                    <div>
                       <span>
-                        <span className="label">English</span>
-                        <span className="number">95%</span>
+                        <span className="label">React.js</span>
                       </span>
-                      <div className="background">
-                        <div className="bar">
-                          <div
-                            className="bar_in"
-                            style={{ width: 95 + "%" }}
-                          ></div>
-                        </div>
-                      </div>
                     </div>
 
-                    <div className="progress_inner" data-value="90">
+                    <div>
                       <span>
-                        <span className="label">Japanese</span>
-                        <span className="number">90%</span>
+                        <span className="label">Tailwind CSS</span>
                       </span>
-                      <div className="background">
-                        <div className="bar">
-                          <div
-                            className="bar_in"
-                            style={{ width: 90 + "%" }}
-                          ></div>
-                        </div>
-                      </div>
                     </div>
 
-                    <div className="progress_inner" data-value="85">
+                    <div>
                       <span>
-                        <span className="label">Arabian</span>
-                        <span className="number">85%</span>
+                        <span className="label">Bootstrap</span>
                       </span>
-                      <div className="background">
-                        <div className="bar">
-                          <div
-                            className="bar_in"
-                            style={{ width: 85 + "%" }}
-                          ></div>
-                        </div>
-                      </div>
+                    </div>
+                    <div>
+                      <span>
+                        <span className="label">Node.js</span>
+                      </span>
+                    </div>
+
+                    <div>
+                      <span>
+                        <span className="label">Jest</span>
+                      </span>
+                    </div>
+                    <div>
+                      <span>
+                        <span className="label">Sanity.io</span>
+                      </span>
+                    </div>
+                    <div>
+                      <span>
+                        <span className="label">Express.js</span>
+                      </span>
                     </div>
                   </div>
                   {/* EDN TOKYO PROGRESS */}
@@ -188,7 +171,7 @@ const About = () => {
               </div>
               {/* END MYBOX */}
 
-              <div className="counter">
+              {/* <div className="counter">
                 <div className="about_title">
                   <h3>Fun Facts</h3>
                 </div>
@@ -213,12 +196,12 @@ const About = () => {
                   </li>
                 </ul>
                 {/* END COUNTER CONTENT */}
-              </div>
+              {/*</div>*/}
               {/* END COUNTER */}
 
               <div className="partners">
                 <div className="about_title">
-                  <h3>Our Partners</h3>
+                  <h3>Tools</h3>
                 </div>
                 <Brand />
               </div>

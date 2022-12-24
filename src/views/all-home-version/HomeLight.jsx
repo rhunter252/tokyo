@@ -5,27 +5,26 @@ import { Link } from "react-router-dom";
 import Home from "../../components/Home";
 import About from "../../components/About";
 import Portfolio from "../../components/PortfolioCreative";
-import News from "../../components/News";
 import Contact from "../../components/Contact";
 
 const HomeLight = () => {
   const [isDark, setIsDark] = useState(false);
   const handleLabelClick = () => {
     if (isDark) {
-      localStorage.setItem("theme-color", "light");
+      localStorage.setItem("class", "light");
       document.querySelector("body").classList.add("light");
       document.querySelector("body").classList.remove("dark");
       setIsDark(false);
     } else {
-      localStorage.setItem("theme-color", "dark");
+      localStorage.setItem("class", "dark");
       document.querySelector("body").classList.add("dark");
-      document.querySelector("body").classList.remove("-light");
+      document.querySelector("body").classList.remove("light");
       setIsDark(true);
     }
   };
   return (
     <>
-      {/* Start Dark & Light Mode Swicher  */}
+      {/* Start Dark & Light Mode Switcher  */}
       <label
         className={`theme-switcher-label d-flex  ${isDark ? "active" : ""}`}
       >
@@ -50,7 +49,7 @@ const HomeLight = () => {
           <div className="leftpart">
             <div className="leftpart_inner">
               <div className="logo">
-                <Link className="navbar-brand" to="/">
+                <Link className="navbar-brand" to="/home-light">
                   <img src="/assets/img/logo/RandyH logo.png" alt="brand" />
                 </Link>
               </div>
@@ -82,14 +81,6 @@ const HomeLight = () => {
                     />
                     <span className="menu_content">Portfolio</span>
                   </Tab>
-                  {/* <Tab>
-                    <img
-                      className="svg"
-                      src="/assets/img/svg/paper.svg"
-                      alt="paper"
-                    />
-                    <span className="menu_content">News</span>
-                  </Tab> */}
                   <Tab>
                     <img
                       className="svg"
@@ -140,9 +131,9 @@ const HomeLight = () => {
                 </TabPanel>
                 {/* END PORTFOLIO MENU TAB CONTENT */}
 
-                <TabPanel>
+                {/* <TabPanel>
                   <News />
-                </TabPanel>
+                </TabPanel> */}
                 {/* END NEWS MENU TAB CONTENT */}
 
                 <TabPanel>
