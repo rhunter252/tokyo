@@ -496,7 +496,7 @@ h6 {
   list-style-type: none;
 }
 .social li {
-  margin: 0px 15px 0px 0px;
+  margin: 0px 5px 0px 10px;
   display: inline-flex;
 }
 .social li:last-child {
@@ -874,7 +874,10 @@ h6 {
 }
 
 .tokyo_tm_portfolio .portfolio_filter .react-tabs__tab-list li:hover,
-.tokyo_tm_portfolio .portfolio_filter .react-tabs__tab-list li.react-tabs__tab--selected {
+.tokyo_tm_portfolio
+  .portfolio_filter
+  .react-tabs__tab-list
+  li.react-tabs__tab--selected {
   color: #000;
   letter-spacing: 2px;
 }
@@ -883,6 +886,7 @@ h6 {
   height: auto;
   clear: both;
   float: left;
+  margin-top: 20px;
 }
 .tokyo_tm_portfolio {
   width: 100%;
@@ -1538,8 +1542,10 @@ body.modal {
   height: 6px;
   z-index: 50;
   background-color: #000;
-  -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 .cursor-inner.cursor-hover {
   margin-left: -40px;

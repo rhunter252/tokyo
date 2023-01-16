@@ -41,9 +41,9 @@ const Portfolio = () => {
               <TabList>
                 <Tab>All</Tab>
                 <Tab>React</Tab>
-                <Tab>Landing Pages</Tab>
-                <Tab>Web Apps</Tab>
-                <Tab>HTML Emails</Tab>
+                <Tab>Landing Page</Tab>
+                <Tab>Web App</Tab>
+                <Tab>HTML Email</Tab>
               </TabList>
               {/* END TABLIST */}
               <div className="list_wrapper">
@@ -88,7 +88,7 @@ const Portfolio = () => {
                       <div className="inner">
                         <div className="entry tokyo_tm_portfolio_animation_wrap">
                           <img
-                            src="assets/img/portfolio/7.jpg"
+                            src="assets/img/portfolio/shortly.png"
                             alt="Details"
                             data-tip
                             data-for="detail2"
@@ -103,8 +103,8 @@ const Portfolio = () => {
                             className="tooltip-wrapper"
                           >
                             <div>
-                              <h5>Ave Simone</h5>
-                              <span>Details</span>
+                              <h5>Shortly - link shortener</h5>
+                              <span>Web App</span>
                             </div>
                           </ReactTooltip>
                         </div>
@@ -119,23 +119,23 @@ const Portfolio = () => {
                       <div className="inner">
                         <div className="entry tokyo_tm_portfolio_animation_wrap">
                           <img
-                            src="assets/img/portfolio/7.jpg"
+                            src="assets/img/portfolio/IPtracker.png"
                             alt="Details"
                             data-tip
-                            data-for="detail2"
+                            data-for="detail3"
                             onClick={toggleModalFour}
                           />
 
                           <ReactTooltip
-                            id="detail2"
+                            id="detail3"
                             place="bottom"
                             type="light"
                             effect="float"
                             className="tooltip-wrapper"
                           >
                             <div>
-                              <h5>Ave Simone</h5>
-                              <span>Details</span>
+                              <h5>IP Address Tracker</h5>
+                              <span>Web App</span>
                             </div>
                           </ReactTooltip>
                         </div>
@@ -150,23 +150,23 @@ const Portfolio = () => {
                       <div className="inner">
                         <div className="entry tokyo_tm_portfolio_animation_wrap">
                           <img
-                            src="assets/img/portfolio/7.jpg"
+                            src="assets/img/portfolio/artblokz.png"
                             alt="Details"
                             data-tip
-                            data-for="detail2"
+                            data-for="detail4"
                             onClick={toggleModalFour}
                           />
 
                           <ReactTooltip
-                            id="detail2"
+                            id="detail4"
                             place="bottom"
                             type="light"
                             effect="float"
                             className="tooltip-wrapper"
                           >
                             <div>
-                              <h5>Ave Simone</h5>
-                              <span>Details</span>
+                              <h5>Art Blokz</h5>
+                              <span>Landing Page</span>
                             </div>
                           </ReactTooltip>
                         </div>
@@ -181,23 +181,23 @@ const Portfolio = () => {
                       <div className="inner">
                         <div className="entry tokyo_tm_portfolio_animation_wrap">
                           <img
-                            src="assets/img/portfolio/7.jpg"
+                            src="assets/img/portfolio/little lemon screenshot.png"
                             alt="Details"
                             data-tip
-                            data-for="detail2"
+                            data-for="detail5"
                             onClick={toggleModalFour}
                           />
 
                           <ReactTooltip
-                            id="detail2"
+                            id="detail5"
                             place="bottom"
                             type="light"
                             effect="float"
                             className="tooltip-wrapper"
                           >
                             <div>
-                              <h5>Ave Simone</h5>
-                              <span>Details</span>
+                              <h5>Little Lemon Restaurant</h5>
+                              <span>React</span>
                             </div>
                           </ReactTooltip>
                         </div>
@@ -212,23 +212,23 @@ const Portfolio = () => {
                       <div className="inner">
                         <div className="entry tokyo_tm_portfolio_animation_wrap">
                           <img
-                            src="assets/img/portfolio/7.jpg"
+                            src="assets/img/portfolio/LV email screenshot.png"
                             alt="Details"
                             data-tip
-                            data-for="detail2"
+                            data-for="detail6"
                             onClick={toggleModalFour}
                           />
 
                           <ReactTooltip
-                            id="detail2"
+                            id="detail6"
                             place="bottom"
                             type="light"
                             effect="float"
                             className="tooltip-wrapper"
                           >
                             <div>
-                              <h5>Ave Simone</h5>
-                              <span>Details</span>
+                              <h5>Promo HTML email</h5>
+                              <span>HTML email</span>
                             </div>
                           </ReactTooltip>
                         </div>

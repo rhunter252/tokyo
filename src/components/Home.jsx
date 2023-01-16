@@ -18,14 +18,7 @@ const Home = () => {
           {/* END AVATAR */}
           <div className="details">
             <h3 className="name">Randy Hunter</h3>
-            {/* <p className="job">
-              I started playing with computers when I was 11 years-old. Since
-              then, I've been tinkering with all sorts of technologies that in
-              some way or another led me to work on video production, creating
-              websites, and web applications. I'm a lifelong learner 🎓, a
-              father👶🏽🧒🏽, a husband💍, and I might have a thing for video games.
-              🎮
-            </p> */}
+            <h4 className="job">Web Developer</h4>
             {/* END JOB */}
             <Social />
           </div>

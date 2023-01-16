@@ -31,7 +31,7 @@ const About = () => {
               </p>
               <div className="tokyo_tm_button">
                 <button onClick={toggleModal} className="ib-button">
-                  Read More
+                  Skills
                 </button>
               </div>
               {/* END TOKYO BUTTON */}
