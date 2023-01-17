@@ -181,7 +181,7 @@ const Portfolio = () => {
                       <div className="inner">
                         <div className="entry tokyo_tm_portfolio_animation_wrap">
                           <img
-                            src="assets/img/portfolio/5.jpg"
+                            src="assets/img/portfolio/6.jpg"
                             alt="Vimeo"
                             onClick={() => setOpen2(true)}
                           />

@@ -1,31 +1,36 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import ReactMapGL from "react-map-gl";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [viewport, setViewport] = useState({
-    latitude: 40.712776,
-    longitude: -74.005974,
-    zoom: 8,
+    latitude: 36.044659,
+    longitude: -79.766235,
+    zoom: 7,
   });
+
+  const form = useRef();
 
   function sendEmail(e) {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_n4mkhz9",
-        "template_ugoztxr",
-        e.target,
-        "user_vYmDSd9PwIuRXUQEDjYwN"
+        "service_jer66un",
+        "template_8aiixog",
+        form.current,
+        "Vwav1N79Ut6aGRsWP"
       )
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
 
     e.target.reset();
   }
@@ -56,11 +61,11 @@ const Contact = () => {
         {/* MENU WRAP */}
 
         <div className="fields">
-          <form className="contact_form" onSubmit={sendEmail}>
+          <form ref={form} className="contact_form" onSubmit={sendEmail}>
             <div className="first">
               <ul>
                 <li>
-                  <input type="text" name="name" placeholder="Name" />
+                  <input type="text" name="user_name" placeholder="Name" />
                 </li>
                 {/* END FIRST NAME */}
 
@@ -76,7 +81,7 @@ const Contact = () => {
               </ul>
             </div>
             <div className="tokyo_tm_button">
-              <button type="submit" className="ib-button">
+              <button type="submit" value="Send" className="ib-button">
                 Send Message
               </button>
             </div>
