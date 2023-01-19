@@ -2032,9 +2032,10 @@ body.modal {
   margin-bottom: 3px;
   font-style: italic;
 }
-.portfolio_tm_modalbox .main_details .detailbox span a {
+.portfolio_tm_modalbox .main_details .detailbox a {
   text-decoration: none;
   color: #767676;
+  font-size: 24px;
 
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -2042,7 +2043,7 @@ body.modal {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.portfolio_tm_modalbox .main_details .detailbox span a:hover {
+.portfolio_tm_modalbox .main_details .detailbox a:hover {
   color: #000;
   letter-spacing: 2px;
 }

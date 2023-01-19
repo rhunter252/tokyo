@@ -728,13 +728,29 @@ const Portfolio = () => {
               {/* END portfolio_main_title */}
               <div className="main_details">
                 <div className="textbox">
-                  <p>Goals Description</p>
+                  <p>
+                    Credentials for testing
+                    <br />
+                    <b>email: </b>test@test.com <b>password: </b>test
+                  </p>
+                  <p>
+                    A MERN app that lets you create, view, update, and delete
+                    goals. The MongoDB database stores the goals and their
+                    details, such as the goal name, description, and date.
+                    Express.js handles the server-side routing and logic, React
+                    is used for the user interface and handling user
+                    interactions, and Node.js is used for the back-end. Users
+                    can create new goals, view their existing goals, and delete
+                    a goal. The app also has authentication using JSON web
+                    tokens that allows users to login and view their individual
+                    goals.
+                  </p>
                 </div>
                 <div className="detailbox">
                   <ul>
                     <li>
                       <a
-                        href="https://illustrious-dusk-23b4de.netlify.app/"
+                        href="https://goalsmernapprh.herokuapp.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
