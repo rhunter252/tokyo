@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { Tabs, TabPanel } from "react-tabs";
 import SimpleReactLightbox from "simple-react-lightbox";
 import ReactTooltip from "react-tooltip";
 // import ModalVideo from "react-modal-video";
@@ -51,6 +51,37 @@ const Portfolio = () => {
               <div className="list_wrapper">
                 <TabPanel>
                   <ul className="portfolio_list">
+                    <li
+                      data-aos="fade-right"
+                      data-aos-duration="1200"
+                      data-aos-delay="200"
+                    >
+                      <div className="inner">
+                        <div className="entry tokyo_tm_portfolio_animation_wrap">
+                          <img
+                            src="assets/img/portfolio/little lemon screenshot.png"
+                            alt="Details"
+                            data-tip
+                            data-for="detail5"
+                            onClick={toggleModalFive}
+                          />
+
+                          <ReactTooltip
+                            id="detail5"
+                            place="bottom"
+                            type="light"
+                            effect="float"
+                            className="tooltip-wrapper"
+                          >
+                            <div>
+                              <h5>Little Lemon Restaurant</h5>
+                              <span>React</span>
+                            </div>
+                          </ReactTooltip>
+                        </div>
+                      </div>
+                    </li>
+
                     <li
                       data-aos="fade-right"
                       data-aos-duration="1200"
@@ -175,36 +206,7 @@ const Portfolio = () => {
                       </div>
                     </li>
                     {/* END DETAILS */}
-                    <li
-                      data-aos="fade-right"
-                      data-aos-duration="1200"
-                      data-aos-delay="200"
-                    >
-                      <div className="inner">
-                        <div className="entry tokyo_tm_portfolio_animation_wrap">
-                          <img
-                            src="assets/img/portfolio/little lemon screenshot.png"
-                            alt="Details"
-                            data-tip
-                            data-for="detail5"
-                            onClick={toggleModalFive}
-                          />
 
-                          <ReactTooltip
-                            id="detail5"
-                            place="bottom"
-                            type="light"
-                            effect="float"
-                            className="tooltip-wrapper"
-                          >
-                            <div>
-                              <h5>Little Lemon Restaurant</h5>
-                              <span>React</span>
-                            </div>
-                          </ReactTooltip>
-                        </div>
-                      </div>
-                    </li>
                     {/* END DETAILS */}
                     <li
                       data-aos="fade-right"
@@ -214,7 +216,7 @@ const Portfolio = () => {
                       <div className="inner">
                         <div className="entry tokyo_tm_portfolio_animation_wrap">
                           <img
-                            src="assets/img/portfolio/LV email screenshot.png"
+                            src="assets/img/portfolio/goals screenshot.png"
                             alt="Details"
                             data-tip
                             data-for="detail6"
@@ -229,8 +231,8 @@ const Portfolio = () => {
                             className="tooltip-wrapper"
                           >
                             <div>
-                              <h5>Promo HTML email</h5>
-                              <span>HTML email</span>
+                              <h5>GoalSetter</h5>
+                              <span>MERN fullstack App</span>
                             </div>
                           </ReactTooltip>
                         </div>
@@ -248,6 +250,80 @@ const Portfolio = () => {
       </SimpleReactLightbox>
 
       {/* START MODAL FOR PORTFOLIO DETAILS */}
+      <Modal
+        isOpen={isOpen5}
+        onRequestClose={toggleModalFive}
+        contentLabel="My dialog"
+        className="mymodal"
+        overlayClassName="myoverlay"
+        closeTimeoutMS={500}
+      >
+        <div className="tokyo_tm_modalbox_news portfolio_tm_modalbox">
+          <button className="close-modal" onClick={toggleModalFive}>
+            <img src="assets/img/svg/cancel.svg" alt="close icon" />
+          </button>
+          {/* END CLOSE ICON */}
+          <div className="box_inner">
+            <div className="description_wrap scrollable">
+              <div className="image">
+                <img
+                  src="assets/img/portfolio/little lemon menu.png"
+                  alt="tumb"
+                />
+                <div
+                  className="main"
+                  style={{
+                    backgroundImage:
+                      "url(assets/img/portfolio/little lemon menu.png)",
+                  }}
+                ></div>
+              </div>
+              {/* END IMAGE */}
+              <div className="portfolio_main_title">
+                <h3>Little Lemon Restaurant Capstone Project</h3>
+                <span>React | Chakra UI | Formik</span>
+              </div>
+              {/* END portfolio_main_title */}
+              <div className="main_details">
+                <div className="textbox">
+                  <p>
+                    A React app for a restaurant using Chakra UI and Formik that
+                    allows users to view the restaurant's menu and make
+                    reservations. Chakra UI is a UI library for React that
+                    provides a set of reusable components for building user
+                    interfaces. Formik is a library for handling forms in React.
+                  </p>
+                </div>
+                <div className="detailbox">
+                  <ul>
+                    <li>
+                      <a
+                        href="https://super-eclair-35aa12.netlify.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Demo
+                      </a>
+                      <br />
+                      <a
+                        href="https://github.com/rhunter252/Little-Lemon-capstone"
+                        target="blank"
+                        rel="noopener noreferrer"
+                      >
+                        Code
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              {/* main_details */}
+            </div>
+          </div>
+          {/* END BOX INNER */}
+        </div>
+        {/* END MODALBOX NEWS */}
+      </Modal>
+
       <Modal
         isOpen={isOpen1}
         onRequestClose={toggleModalOne}
@@ -556,15 +632,12 @@ const Portfolio = () => {
           <div className="box_inner">
             <div className="description_wrap scrollable">
               <div className="image">
-                <img
-                  src="assets/img/portfolio/shortly screenshot.png"
-                  alt="tumb"
-                />
+                <img src="assets/img/portfolio/artblokz dog.png" alt="tumb" />
                 <div
                   className="main"
                   style={{
                     backgroundImage:
-                      "url(assets/img/portfolio/shortly screenshot.png)",
+                      "url(assets/img/portfolio/artblokz dog.png)",
                   }}
                 ></div>
               </div>
@@ -577,18 +650,23 @@ const Portfolio = () => {
               <div className="main_details">
                 <div className="textbox">
                   <p>
-                    React app that shortens URLs which allows users to input a
-                    long URL and then receive a shortened version of the link.
-                    The app uses the Shrtcode API to communicate with a server
-                    that generates the shortened link. The user then is able to
-                    copy and share the shortened link.
+                    An art portfolio website built using HTML, CSS, and
+                    JavaScript for showcasing an artist's work. The HTML
+                    provides the basic structure and content of the site, while
+                    CSS is used to create a cohesive design and control the
+                    layout and styling of the pages. JavaScript is then used to
+                    add dynamic elements and interactions, such as image
+                    galleries, sliders, and hover effects. The site could also
+                    include features such as contact forms and social media
+                    integration to make it easy for visitors to connect with the
+                    artist and share their work.
                   </p>
                 </div>
                 <div className="detailbox">
                   <ul>
                     <li>
                       <a
-                        href="https://illustrious-dusk-23b4de.netlify.app/"
+                        href="https://rhunter252.github.io/Art-Blokz/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -596,81 +674,7 @@ const Portfolio = () => {
                       </a>
                       <br />
                       <a
-                        href="https://github.com/rhunter252/Shortly"
-                        target="blank"
-                        rel="noopener noreferrer"
-                      >
-                        Code
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              {/* main_details */}
-            </div>
-          </div>
-          {/* END BOX INNER */}
-        </div>
-        {/* END MODALBOX NEWS */}
-      </Modal>
-
-      <Modal
-        isOpen={isOpen5}
-        onRequestClose={toggleModalFive}
-        contentLabel="My dialog"
-        className="mymodal"
-        overlayClassName="myoverlay"
-        closeTimeoutMS={500}
-      >
-        <div className="tokyo_tm_modalbox_news portfolio_tm_modalbox">
-          <button className="close-modal" onClick={toggleModalFive}>
-            <img src="assets/img/svg/cancel.svg" alt="close icon" />
-          </button>
-          {/* END CLOSE ICON */}
-          <div className="box_inner">
-            <div className="description_wrap scrollable">
-              <div className="image">
-                <img
-                  src="assets/img/portfolio/shortly screenshot.png"
-                  alt="tumb"
-                />
-                <div
-                  className="main"
-                  style={{
-                    backgroundImage:
-                      "url(assets/img/portfolio/shortly screenshot.png)",
-                  }}
-                ></div>
-              </div>
-              {/* END IMAGE */}
-              <div className="portfolio_main_title">
-                <h3>Shortly URL Shortening</h3>
-                <span>React | Tailwind CSS | Shrtcode API</span>
-              </div>
-              {/* END portfolio_main_title */}
-              <div className="main_details">
-                <div className="textbox">
-                  <p>
-                    React app that shortens URLs which allows users to input a
-                    long URL and then receive a shortened version of the link.
-                    The app uses the Shrtcode API to communicate with a server
-                    that generates the shortened link. The user then is able to
-                    copy and share the shortened link.
-                  </p>
-                </div>
-                <div className="detailbox">
-                  <ul>
-                    <li>
-                      <a
-                        href="https://illustrious-dusk-23b4de.netlify.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Demo
-                      </a>
-                      <br />
-                      <a
-                        href="https://github.com/rhunter252/Shortly"
+                        href="https://github.com/rhunter252/Art-Blokz"
                         target="blank"
                         rel="noopener noreferrer"
                       >
@@ -705,32 +709,26 @@ const Portfolio = () => {
             <div className="description_wrap scrollable">
               <div className="image">
                 <img
-                  src="assets/img/portfolio/shortly screenshot.png"
+                  src="assets/img/portfolio/goals screenshot.png"
                   alt="tumb"
                 />
                 <div
                   className="main"
                   style={{
                     backgroundImage:
-                      "url(assets/img/portfolio/shortly screenshot.png)",
+                      "url(assets/img/portfolio/goals screenshot.png)",
                   }}
                 ></div>
               </div>
               {/* END IMAGE */}
               <div className="portfolio_main_title">
-                <h3>Shortly URL Shortening</h3>
-                <span>React | Tailwind CSS | Shrtcode API</span>
+                <h3>GoalSetter</h3>
+                <span>React | Express | Node.js | MongoDB</span>
               </div>
               {/* END portfolio_main_title */}
               <div className="main_details">
                 <div className="textbox">
-                  <p>
-                    React app that shortens URLs which allows users to input a
-                    long URL and then receive a shortened version of the link.
-                    The app uses the Shrtcode API to communicate with a server
-                    that generates the shortened link. The user then is able to
-                    copy and share the shortened link.
-                  </p>
+                  <p>Goals Description</p>
                 </div>
                 <div className="detailbox">
                   <ul>
@@ -744,7 +742,7 @@ const Portfolio = () => {
                       </a>
                       <br />
                       <a
-                        href="https://github.com/rhunter252/Shortly"
+                        href="https://github.com/rhunter252/Goals-App"
                         target="blank"
                         rel="noopener noreferrer"
                       >
