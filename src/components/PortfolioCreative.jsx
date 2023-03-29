@@ -152,7 +152,7 @@ const Portfolio = () => {
                       <div className="inner">
                         <div className="entry tokyo_tm_portfolio_animation_wrap">
                           <img
-                            src="assets/img/portfolio/IPtracker.png"
+                            src="assets/img/portfolio/admin dashboard screenshot.png"
                             alt="Details"
                             data-tip
                             data-for="detail3"
@@ -167,7 +167,7 @@ const Portfolio = () => {
                             className="tooltip-wrapper"
                           >
                             <div>
-                              <h5>IP Address Tracker</h5>
+                              <h5>Admin Dashboard</h5>
                               <span>Web App</span>
                             </div>
                           </ReactTooltip>
@@ -559,38 +559,47 @@ const Portfolio = () => {
             <div className="description_wrap scrollable">
               <div className="image">
                 <img
-                  src="assets/img/portfolio/ip tracker screenshot.png"
+                  src="assets/img/portfolio/admin dashboard screenshot.png"
                   alt="tumb"
                 />
                 <div
                   className="main"
                   style={{
                     backgroundImage:
-                      "url(assets/img/portfolio/ip tracker screenshot.png)",
+                      "url(assets/img/portfolio/admin dashboard screenshot.png)",
                   }}
                 ></div>
               </div>
               {/* END IMAGE */}
               <div className="portfolio_main_title">
-                <h3>Shortly URL Shortening</h3>
-                <span>React | Tailwind CSS | Shrtcode API</span>
+                <h3>Admin Dashboard</h3>
+                <span>Next JS | Tailwind CSS | Chart JS</span>
               </div>
               {/* END portfolio_main_title */}
               <div className="main_details">
                 <div className="textbox">
                   <p>
-                    React app that shortens URLs which allows users to input a
-                    long URL and then receive a shortened version of the link.
-                    The app uses the Shrtcode API to communicate with a server
-                    that generates the shortened link. The user then is able to
-                    copy and share the shortened link.
+                    Powerful user dashboard, built with Next.js and styled with
+                    the dynamic Tailwind CSS framework. The dashboard boasts a
+                    sleek and modern design that adapts to any device. With a
+                    focus on intuitive usability and advanced functionality, our
+                    Next.js dashboard provides an all-in-one solution for
+                    managing and monitoring key performance indicators and
+                    business metrics. And with Tailwind CSS's customizable
+                    utility classes, you can easily tailor the dashboard to your
+                    brand's unique visual style.
+                    <br />
+                    From real-time data visualizations to customizable widgets
+                    and seamless integration with your existing tools and
+                    workflows, our Next.js and Tailwind CSS dashboard empowers
+                    your team to make informed decisions and drive growth.
                   </p>
                 </div>
                 <div className="detailbox">
                   <ul>
                     <li>
                       <a
-                        href="https://astonishing-cupcake-527df8.netlify.app/"
+                        href="https://radiant-entremet-ea41c4.netlify.app/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -598,7 +607,7 @@ const Portfolio = () => {
                       </a>
                       <br />
                       <a
-                        href="https://github.com/rhunter252/Frontend-Mentor---IP-tracker"
+                        href="https://github.com/rhunter252/nextjs-user-dashboard"
                         target="blank"
                         rel="noopener noreferrer"
                       >

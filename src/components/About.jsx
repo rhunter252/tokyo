@@ -22,12 +22,15 @@ const About = () => {
           <div className="description_inner">
             <div className="left">
               <p>
-                I started playing with computers when I was 11 years-old. Since
-                then, I've been tinkering with all sorts of technologies that in
-                some way or another led me to work on video production, creating
-                websites, and web applications. I'm a lifelong learner 🎓, a
-                father👶🏽🧒🏽, a husband💍, and I might have a thing for video
-                games. 🎮
+                From a young age, I discovered my passion for technology and
+                began tinkering with computers at just 11 years old. This
+                curiosity has led me to explore a diverse range of technologies,
+                including video production, PC building, website creation, and
+                web application development. As a lifelong learner, I'm
+                constantly seeking new challenges and opportunities to grow both
+                personally and professionally. When I'm not immersed in the
+                world of tech, you might find me indulging in my love for video
+                games. Let's connect and share our experiences!
               </p>
               <div className="tokyo_tm_button">
                 <button onClick={toggleModal} className="ib-button">
@@ -131,7 +134,11 @@ const About = () => {
                         <span className="label">React.js</span>
                       </span>
                     </div>
-
+                    <div>
+                      <span>
+                        <span className="label">Next.js</span>
+                      </span>
+                    </div>
                     <div>
                       <span>
                         <span className="label">Tailwind CSS</span>
