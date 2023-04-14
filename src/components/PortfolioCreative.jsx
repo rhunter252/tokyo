@@ -183,7 +183,7 @@ const Portfolio = () => {
                       <div className="inner">
                         <div className="entry tokyo_tm_portfolio_animation_wrap">
                           <img
-                            src="assets/img/portfolio/artblokz.png"
+                            src="assets/img/portfolio/seven-sins.png"
                             alt="Details"
                             data-tip
                             data-for="detail4"
@@ -198,8 +198,8 @@ const Portfolio = () => {
                             className="tooltip-wrapper"
                           >
                             <div>
-                              <h5>Art Blokz</h5>
-                              <span>Landing Page</span>
+                              <h5>Sinful Visions</h5>
+                              <span>AI Image Generation</span>
                             </div>
                           </ReactTooltip>
                         </div>
@@ -645,37 +645,33 @@ const Portfolio = () => {
                 <div
                   className="main"
                   style={{
-                    backgroundImage:
-                      "url(assets/img/portfolio/artblokz dog.png)",
+                    backgroundImage: "url(assets/img/portfolio/seven-sins.png)",
                   }}
                 ></div>
               </div>
               {/* END IMAGE */}
               <div className="portfolio_main_title">
-                <h3>Art Blokz</h3>
-                <span>HTML | CSS | JavaScript</span>
+                <h3>Sinful Visions</h3>
+                <span>Express | OpenAI | JavaScript</span>
               </div>
               {/* END portfolio_main_title */}
               <div className="main_details">
                 <div className="textbox">
                   <p>
-                    An art portfolio website built using HTML, CSS, and
-                    JavaScript for showcasing an artist's work. The HTML
-                    provides the basic structure and content of the site, while
-                    CSS is used to create a cohesive design and control the
-                    layout and styling of the pages. JavaScript is then used to
-                    add dynamic elements and interactions, such as image
-                    galleries, sliders, and hover effects. The site could also
-                    include features such as contact forms and social media
-                    integration to make it easy for visitors to connect with the
-                    artist and share their work.
+                    Sinful Visions is a captivating, interactive website that
+                    utilizes the power of OpenAI's Dall-e API, JavaScript, and
+                    Express to create a visually stunning exploration of the 7
+                    Deadly Sins. Users are treated to a seamless browsing
+                    experience, where they can engage with dynamic, AI-generated
+                    images and delve into the rich history, symbolism, and
+                    cultural significance of each sin.
                   </p>
                 </div>
                 <div className="detailbox">
                   <ul>
                     <li>
                       <a
-                        href="https://rhunter252.github.io/Art-Blokz/"
+                        href="https://seven-sins.herokuapp.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -683,7 +679,7 @@ const Portfolio = () => {
                       </a>
                       <br />
                       <a
-                        href="https://github.com/rhunter252/Art-Blokz"
+                        href="https://github.com/rhunter252/art-gallery-hover"
                         target="blank"
                         rel="noopener noreferrer"
                       >
