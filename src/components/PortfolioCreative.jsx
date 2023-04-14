@@ -652,7 +652,7 @@ const Portfolio = () => {
               {/* END IMAGE */}
               <div className="portfolio_main_title">
                 <h3>Sinful Visions</h3>
-                <span>Express | OpenAI | JavaScript</span>
+                <span>Express | DALL-E API | JavaScript</span>
               </div>
               {/* END portfolio_main_title */}
               <div className="main_details">
